@@ -16,6 +16,7 @@ resource "aws_instance" "NuwaniWeb" {
 }
 
 }
+######
 output "instance_ips"
    {
      value = ["${aws_instance.Nuwaniweb.*.public_ip}"]
