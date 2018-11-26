@@ -12,6 +12,7 @@ resource "aws_instance" "NuwaniWeb" {
 
  tags {
  Name = "NuwaniWeb"
+user_data = "${file("install.sh")}"
 }
 
 }
